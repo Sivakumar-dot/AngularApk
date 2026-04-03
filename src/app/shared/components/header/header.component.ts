@@ -31,6 +31,10 @@ import { ConfirmDialogComponent } from '../confirm-dialog/confirm-dialog.compone
       :host a:hover {
         background: rgba(255, 255, 255, 0.12);
       }
+      :host a.active-link {
+        background: rgba(255, 255, 255, 0.22);
+        color: #ffffff;
+      }
     `,
   ],
 })

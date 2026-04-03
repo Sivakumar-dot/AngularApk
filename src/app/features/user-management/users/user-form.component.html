@@ -1,0 +1,66 @@
+<div class="bp-dialog">
+  <div class="flex items-center justify-between">
+    <h2 class="text-lg font-semibold text-slate-900">
+      {{ data.user ? 'Edit User' : 'Create User' }}
+    </h2>
+    <button mat-icon-button type="button" (click)="close()">
+      <mat-icon>close</mat-icon>
+    </button>
+  </div>
+  <mat-divider class="my-3"></mat-divider>
+
+  <form [formGroup]="form" (ngSubmit)="submit()">
+    <div class="bp-form-grid">
+      <mat-form-field appearance="outline" class="full">
+        <mat-label>First Name</mat-label>
+        <input matInput formControlName="firstName" />
+        <mat-error *ngIf="form.get('firstName')?.hasError('required')">
+          First name is required
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="full">
+        <mat-label>Last Name</mat-label>
+        <input matInput formControlName="lastName" />
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="full">
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="email" />
+        <mat-error *ngIf="form.get('email')?.hasError('required')">
+          Email is required
+        </mat-error>
+        <mat-error *ngIf="form.get('email')?.hasError('email')">
+          Enter a valid email
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="full">
+        <mat-label>Mobile</mat-label>
+        <input matInput formControlName="mobile" />
+        <mat-error *ngIf="form.get('mobile')?.hasError('required')">
+          Mobile is required
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="full">
+        <mat-label>Role</mat-label>
+        <mat-select formControlName="roleId">
+          <mat-option *ngFor="let role of data.roles" [value]="role.id">
+            {{ role.name }}
+          </mat-option>
+        </mat-select>
+        <mat-error *ngIf="form.get('roleId')?.hasError('required')">
+          Role is required
+        </mat-error>
+      </mat-form-field>
+    </div>
+
+    <div class="mt-6 flex justify-end gap-2">
+      <button mat-stroked-button type="button" (click)="close()">Cancel</button>
+      <button mat-flat-button color="primary" type="submit">
+        {{ data.user ? 'Update' : 'Create' }}
+      </button>
+    </div>
+  </form>
+</div>

@@ -15,5 +15,21 @@ export const routes: Routes = [
   { path: 'products', component: ProductListComponent, canActivate: [AuthGuard] },
   { path: 'product/:id', component: ProductDetailComponent, canActivate: [AuthGuard] },
   { path: 'cart', component: CartComponent, canActivate: [AuthGuard] },
+  {
+    path: 'users',
+    canActivate: [AuthGuard],
+    loadComponent: () =>
+      import('./features/user-management/users/user-list.component').then(
+        (m) => m.UserListComponent
+      ),
+  },
+  {
+    path: 'roles',
+    canActivate: [AuthGuard],
+    loadComponent: () =>
+      import('./features/user-management/roles/role-list.component').then(
+        (m) => m.RoleListComponent
+      ),
+  },
   { path: '**', redirectTo: 'home' },
 ];
