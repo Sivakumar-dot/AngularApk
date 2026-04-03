@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <rect width="600" height="400" rx="40" fill="#111827"/>
+  <circle cx="200" cy="200" r="120" fill="#22c55e" opacity="0.2"/>
+  <circle cx="400" cy="200" r="120" fill="#60a5fa" opacity="0.2"/>
+  <path d="M220 150h160v100H220z" fill="#e2e8f0" opacity="0.85"/>
+  <text x="60" y="80" font-family="Space Grotesk, sans-serif" font-size="28" fill="#f8fafc">Clutch Plate</text>
+</svg>

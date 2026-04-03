@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "name": "High Torque Engine Kit",
+    "price": 4499,
+    "brand": "TVS Racing",
+    "category": "Engine",
+    "compatibleBikes": ["Apache RTR 160", "Apache RR 310"],
+    "image": "assets/images/engine-kit.svg",
+    "rating": 4.8,
+    "description": "Performance-focused engine kit tuned for smoother pickup and reliable heat management."
+  },
+  {
+    "id": 2,
+    "name": "Ceramic Brake Pad Set",
+    "price": 1299,
+    "brand": "Brembo",
+    "category": "Brake",
+    "compatibleBikes": ["Pulsar NS 200", "Yamaha FZ"],
+    "image": "https://unsplash.com/photos/nh8TxtF2aXA/download?force=true",
+    "rating": 4.6,
+    "description": "High-grip ceramic pads that deliver consistent stopping power in city and highway rides."
+  },
+  {
+    "id": 3,
+    "name": "Premium Oil Filter",
+    "price": 699,
+    "brand": "Shell",
+    "category": "Oil",
+    "compatibleBikes": ["Apache RTR 160", "Pulsar 150", "Yamaha FZ"],
+    "image": "https://images.pexels.com/photos/31864583/pexels-photo-31864583.jpeg?cs=srgb&dl=pexels-setengah-lima-sore-1061582751-31864583.jpg&fm=jpg",
+    "rating": 4.4,
+    "description": "High-flow oil filter to keep your engine clean and efficient between services."
+  },
+  {
+    "id": 4,
+    "name": "Sport Chain Kit",
+    "price": 2899,
+    "brand": "Rolon",
+    "category": "Drive",
+    "compatibleBikes": ["Pulsar NS 200", "Yamaha R15"],
+    "image": "https://images.pexels.com/photos/9607395/pexels-photo-9607395.jpeg?cs=srgb&dl=pexels-anastasia-shuraeva-9607395.jpg&fm=jpg",
+    "rating": 4.5,
+    "description": "Reinforced chain kit designed for smooth acceleration and extended durability."
+  },
+  {
+    "id": 5,
+    "name": "Iridium Spark Plug",
+    "price": 899,
+    "brand": "NGK",
+    "category": "Engine",
+    "compatibleBikes": ["Apache RTR 160", "Pulsar NS 200", "Yamaha R15"],
+    "image": "assets/images/spark-plug.svg",
+    "rating": 4.7,
+    "description": "Reliable cold starts and improved throttle response for daily and sport riding."
+  },
+  {
+    "id": 6,
+    "name": "Clutch Plate Assembly",
+    "price": 2199,
+    "brand": "Bosch",
+    "category": "Transmission",
+    "compatibleBikes": ["Pulsar 150", "Apache RTR 160"],
+    "image": "assets/images/clutch-plate.svg",
+    "rating": 4.3,
+    "description": "Heavy duty clutch plates for smoother gear shifts and longer life."
+  },
+  {
+    "id": 7,
+    "name": "Street Brake Fluid",
+    "price": 499,
+    "brand": "Motul",
+    "category": "Brake",
+    "compatibleBikes": ["Yamaha FZ", "Yamaha R15", "Apache RR 310"],
+    "image": "https://unsplash.com/photos/nh8TxtF2aXA/download?force=true",
+    "rating": 4.2,
+    "description": "High boiling-point brake fluid for consistent braking under load."
+  },
+  {
+    "id": 8,
+    "name": "Synthetic Engine Oil 1L",
+    "price": 899,
+    "brand": "Castrol",
+    "category": "Oil",
+    "compatibleBikes": ["Apache RTR 160", "Pulsar NS 200", "Yamaha R15"],
+    "image": "https://images.pexels.com/photos/31864583/pexels-photo-31864583.jpeg?cs=srgb&dl=pexels-setengah-lima-sore-1061582751-31864583.jpg&fm=jpg",
+    "rating": 4.6,
+    "description": "Fully synthetic oil that reduces friction and keeps engines cool."
+  },
+  {
+    "id": 9,
+    "name": "Racing Air Filter",
+    "price": 1199,
+    "brand": "K&N",
+    "category": "Engine",
+    "compatibleBikes": ["Apache RR 310", "Yamaha R15"],
+    "image": "assets/images/engine-kit.svg",
+    "rating": 4.5,
+    "description": "High-flow washable air filter for better airflow and engine response."
+  }
+]

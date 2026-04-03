@@ -1,0 +1,23 @@
+<div class="grid gap-4 rounded-3xl border border-slate-200 bg-white p-4 shadow-sm md:grid-cols-3">
+  <mat-form-field appearance="outline" class="w-full">
+    <mat-label>Category</mat-label>
+    <mat-select [(ngModel)]="selectedCategory" (selectionChange)="onCategoryChange($event.value)">
+      <mat-option value="">All</mat-option>
+      <mat-option *ngFor="let category of categories" [value]="category">{{ category }}</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="w-full">
+    <mat-label>Brand</mat-label>
+    <mat-select [(ngModel)]="selectedBrand" (selectionChange)="onBrandChange($event.value)">
+      <mat-option value="">All</mat-option>
+      <mat-option *ngFor="let brand of brands" [value]="brand">{{ brand }}</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <div class="rounded-2xl border border-slate-200 bg-slate-50 px-3 py-2">
+    <p class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">Price Range</p>
+    <mat-slider class="mt-2" min="0" max="5000"></mat-slider>
+    <p class="mt-1 text-xs text-slate-500">UI only</p>
+  </div>
+</div>

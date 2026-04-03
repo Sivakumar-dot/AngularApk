@@ -1,0 +1,52 @@
+<div class="min-h-screen bg-slate-950 text-white">
+  <div class="mx-auto grid min-h-screen max-w-6xl items-center gap-10 px-4 py-10 lg:grid-cols-2">
+    <div class="space-y-6">
+      <p class="text-sm uppercase tracking-[0.4em] text-slate-300">Bike Parts</p>
+      <h1 class="text-4xl font-semibold leading-tight md:text-5xl">
+        Power your ride with trusted spare parts.
+      </h1>
+      <p class="text-slate-300">
+        Sign in to manage bikes, browse premium components, and build your cart.
+      </p>
+      <div class="flex flex-wrap gap-3 text-sm text-slate-200">
+        <span class="rounded-full border border-slate-700 px-4 py-2">Fast delivery</span>
+        <span class="rounded-full border border-slate-700 px-4 py-2">Top brands</span>
+        <span class="rounded-full border border-slate-700 px-4 py-2">Secure checkout</span>
+      </div>
+    </div>
+
+    <mat-card class="rounded-[32px] bg-white/95 p-8 text-slate-900 shadow-2xl">
+      <mat-card-title class="text-2xl font-semibold">Welcome back</mat-card-title>
+      <mat-card-subtitle class="mt-2 text-sm text-slate-500">
+        Use admin / Computer@123
+      </mat-card-subtitle>
+
+      <form class="mt-6 space-y-4" (ngSubmit)="submit()">
+        <mat-form-field appearance="outline" class="w-full">
+          <mat-label>Email or Username</mat-label>
+          <input matInput type="text" [(ngModel)]="username" name="username" required />
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="w-full">
+          <mat-label>Password</mat-label>
+          <input matInput type="password" [(ngModel)]="password" name="password" required />
+        </mat-form-field>
+
+        <button mat-flat-button color="primary" class="w-full">Login</button>
+      </form>
+
+      <div *ngIf="error" class="mt-4 rounded-2xl bg-rose-50 px-4 py-3 text-sm text-rose-600">
+        {{ error }}
+      </div>
+
+      <button
+        mat-stroked-button
+        color="primary"
+        class="mt-6 w-full"
+        (click)="continueAsGuest()"
+      >
+        Continue as Guest
+      </button>
+    </mat-card>
+  </div>
+</div>

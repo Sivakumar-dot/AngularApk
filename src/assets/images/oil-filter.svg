@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <rect width="600" height="400" rx="40" fill="#111827"/>
+  <circle cx="180" cy="200" r="110" fill="#38bdf8" opacity="0.25"/>
+  <circle cx="390" cy="200" r="110" fill="#a855f7" opacity="0.15"/>
+  <path d="M240 120h120v160H240z" fill="#e2e8f0" opacity="0.85"/>
+  <path d="M260 150h80v100H260z" fill="#94a3b8"/>
+  <text x="60" y="80" font-family="Space Grotesk, sans-serif" font-size="28" fill="#f8fafc">Oil Filter</text>
+</svg>
