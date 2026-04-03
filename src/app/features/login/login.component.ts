@@ -37,14 +37,16 @@ export class LoginComponent {
 
   submit(): void {
     this.error = '';
-    const success = this.auth.login(this.username.trim(), this.password);
-    if (success) {
-      this.snackBar.open('Welcome back, admin!', 'Close', { duration: 2000 });
-      this.router.navigate(['/home']);
-    } else {
-      this.error = 'Invalid credentials. Try admin / Computer@123.';
-      this.snackBar.open(this.error, 'Close', { duration: 2500 });
-    }
+    this.auth.login(this.username.trim(), this.password).subscribe({
+      next: () => {
+        this.snackBar.open('Welcome back!', 'Close', { duration: 2000 });
+        this.router.navigate(['/home']);
+      },
+      error: () => {
+        this.error = 'Login failed. Please check your credentials.';
+        this.snackBar.open(this.error, 'Close', { duration: 2500 });
+      },
+    });
   }
 
   continueAsGuest(): void {

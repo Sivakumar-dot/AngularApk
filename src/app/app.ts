@@ -23,6 +23,6 @@ export class App {
 
   private syncHeader(): void {
     const isLogin = this.router.url.startsWith('/login');
-    this.showHeader = this.auth.isAuthenticated() && !isLogin;
+    this.showHeader = this.auth.isLoggedIn() && !isLogin;
   }
 }
